@@ -9,28 +9,28 @@
     <div class="places">
       <h1 class="places__title">- Find where we are!</h1>
       <div class="places__cards container-fluid row gx-0">
-        <div class="col-sm-8 col-lg-4 col-xxl-4 p-1">
+        <div class="mx-auto col-sm-8 col-lg-6 col-xxl-4 p-3">
           <div class="place-card">
             <div class="place-card__icon">x</div>
             <h3 class="place-card__title">Madrid</h3>
             <div class="place-card__description">hahahahah</div>
-            <button>READ MORE</button>
+            <button class="place-card__more">READ MORE</button>
           </div>
         </div>
-        <div class="col-sm-8 col-lg-4 col-xxl-4 p-1">
+        <div class="mx-auto col-sm-8 col-lg-6 col-xxl-4 p-3">
           <div class="place-card">
             <div class="place-card__icon">x</div>
             <h3 class="place-card__title">Madrid</h3>
             <div class="place-card__description">hahahahah</div>
-            <button>READ MORE</button>
+            <button class="place-card__more">READ MORE</button>
           </div>
         </div>
-        <div class="col-sm-8 col-lg-4 col-xxl-4 p-1">
+        <div class="mx-auto col-sm-8 col-lg-6 col-xxl-4 p-3">
           <div class="place-card">
             <div class="place-card__icon">x</div>
             <h3 class="place-card__title">Madrid</h3>
             <div class="place-card__description">hahahahah</div>
-            <button>READ MORE</button>
+            <button class="place-card__more">READ MORE</button>
           </div>
         </div>
       </div>
@@ -73,7 +73,7 @@
   }
 
   .places {
-    background-color: lightcoral;
+    /* background-color: lightcoral; */
 
     &__title {
       padding: 20px;
@@ -81,19 +81,38 @@
 
     &__cards {
       margin: 0;
-      background-color: red;
 
       /* display: flex;
       align-items: center;
       justify-content: center; */
       .place-card {
-        background-color: lightcyan;
+        border: 2px solid red;
+
+        background-color: transparent;
+        color: red;
+
         border-radius: 4px;
 
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
+
+        &__more {
+          border-style: none;
+          padding: 5px 10px;
+          border-radius: 4px;
+          margin-block: 20px;
+
+          background-color: transparent;
+          border: 2px solid red;
+          color: red;
+
+          &:hover {
+            background-color: red;
+            color: white;
+          }
+        }
       }
     }
   }
