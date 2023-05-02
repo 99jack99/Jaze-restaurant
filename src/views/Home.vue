@@ -10,25 +10,22 @@
       <h1 class="places__title">- Find where we are!</h1>
       <div class="places__cards container-fluid row gx-0">
         <div class="mx-auto col-sm-8 col-lg-6 col-xxl-4 p-3">
-          <div class="place-card">
-            <div class="place-card__icon">x</div>
+          <div class="place-card madrid">
             <h3 class="place-card__title">Madrid</h3>
             <div class="place-card__description">hahahahah</div>
             <button class="place-card__more">READ MORE</button>
           </div>
         </div>
         <div class="mx-auto col-sm-8 col-lg-6 col-xxl-4 p-3">
-          <div class="place-card">
-            <div class="place-card__icon">x</div>
-            <h3 class="place-card__title">Madrid</h3>
+          <div class="place-card paris">
+            <h3 class="place-card__title">Paris</h3>
             <div class="place-card__description">hahahahah</div>
             <button class="place-card__more">READ MORE</button>
           </div>
         </div>
         <div class="mx-auto col-sm-8 col-lg-6 col-xxl-4 p-3">
-          <div class="place-card">
-            <div class="place-card__icon">x</div>
-            <h3 class="place-card__title">Madrid</h3>
+          <div class="place-card syndey">
+            <h3 class="place-card__title">Syndey</h3>
             <div class="place-card__description">hahahahah</div>
             <button class="place-card__more">READ MORE</button>
           </div>
@@ -42,7 +39,6 @@
 .loco {
   background-color: black;
   padding: 0;
-  height: 1000px;
 
   .hero-img {
     background-size: cover;
@@ -98,6 +94,10 @@
         align-items: center;
         justify-content: center;
 
+        &__title {
+          margin-block: 20px;
+        }
+
         &__more {
           border-style: none;
           padding: 5px 10px;
@@ -113,6 +113,24 @@
             color: white;
           }
         }
+      }
+
+      .madrid {
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-image: url("../../public/madrid.jpg");
+      }
+
+      .paris {
+        background-size: 100%;
+        background-repeat: no-repeat;
+        background-image: url("../../public/paris.jpg");
+      }
+
+      .syndey {
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-image: url("../../public/syndey.jpg");
       }
     }
   }

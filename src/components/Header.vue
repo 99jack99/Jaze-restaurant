@@ -1,45 +1,56 @@
 <script setup></script>
 
 <template>
-  <div class="header">
-    <div class="header__items">
-      <img class="logo" src="../../public/jaze.png" alt="" />
-      <span>Jaze</span>
+  <nav class="navbar navbar-expand-lg header">
+    <div class="container-fluid">
+      <img class="navbar-brand logo" src="../../public/jaze.png" />
+      <button
+        class="navbar-toggler header__collapse-button"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarNavDropdown"
+        aria-controls="navbarNavDropdown"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div
+        class="collapse navbar-collapse header__items"
+        id="navbarNavDropdown"
+      >
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="#">Menu</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Contact</a>
+          </li>
+        </ul>
+      </div>
     </div>
-    <div class="header__items">
-      <routerLink class="header__items__links" to="/">Menu</routerLink>
-      <routerLink class="header__items__links" to="/">Contact</routerLink>
-    </div>
-  </div>
+  </nav>
 </template>
 
 <style lang="scss" scoped>
 .header {
-  background-color: rgb(0, 0, 0);
-  color: white;
-  height: 8vh;
-  width: 100vw;
+  background-color: black;
+  width: 100%;
 
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
+  &__collapse-button {
+    background-color: grey;
+    color: palevioletred;
+  }
+
+  .logo {
+    height: 75px;
+    width: 75px;
+  }
 
   &__items {
-    margin-inline: 20px;
+    justify-content: flex-end;
 
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-
-    .logo {
-      height: 75px;
-      width: 75px;
-    }
-
-    &__links {
-      text-decoration: none;
+    .nav-link {
       color: white;
     }
   }

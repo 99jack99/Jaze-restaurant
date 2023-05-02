@@ -1,5 +1,6 @@
 <script setup>
-import Header from "../components/Header2.vue";
+import Header from "../components/Header.vue";
+import Footer from "../components/Footer.vue";
 import Home from "../views/Home.vue";
 </script>
 
@@ -7,6 +8,7 @@ import Home from "../views/Home.vue";
   <div id="wall-page">
     <Header />
     <Home />
+    <Footer />
   </div>
 </template>
 
