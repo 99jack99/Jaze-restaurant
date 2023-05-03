@@ -59,9 +59,11 @@
 
     .nav-item {
       margin-inline: 10px;
+
       .nav-link {
         font-size: 15px;
         font-weight: 500;
+        font-family: myFuente;
         color: $white;
         padding: 5px 10px;
 

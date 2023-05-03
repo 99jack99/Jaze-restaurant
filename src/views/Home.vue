@@ -38,10 +38,11 @@
 </template>
 
 <style lang="scss" scoped>
+@import "../assets/styles/index.scss";
+
 .loco {
   background-color: black;
   padding: 0;
-
   .hero-img {
     background-size: cover;
     background-repeat: no-repeat;
@@ -54,9 +55,11 @@
     justify-content: center;
 
     &__slogan {
-      color: white;
+      color: green;
       text-shadow: 1px 1px red;
       margin-bottom: 50px;
+      font-family: test;
+      font-size: 100px;
     }
 
     &__button {
