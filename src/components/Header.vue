@@ -3,7 +3,7 @@
 <template>
   <nav class="navbar navbar-expand-lg header">
     <div class="container-fluid">
-      <img class="navbar-brand logo" src="../../public/jaze.png" />
+      <img class="navbar-brand logo" src="../assets/imgs/icons/jaze-logo.png" />
       <button
         class="navbar-toggler header__collapse-button"
         type="button"
@@ -33,13 +33,15 @@
 </template>
 
 <style lang="scss" scoped>
+@import "../assets/styles/index.scss";
+
 .header {
-  background-color: black;
+  background-color: $main-black;
   width: 100%;
 
   &__collapse-button {
-    background-color: grey;
-    color: palevioletred;
+    background-color: $white;
+    border-radius: 10px;
   }
 
   .logo {
@@ -47,11 +49,58 @@
     width: 75px;
   }
 
+  .navbar-toggler-icon {
+    background-image: url("../assets/imgs/icons/menu-toggler.svg");
+    color: red;
+  }
+
   &__items {
     justify-content: flex-end;
 
-    .nav-link {
-      color: white;
+    .nav-item {
+      margin-inline: 10px;
+      .nav-link {
+        font-size: 15px;
+        font-weight: 500;
+        color: $white;
+        padding: 5px 10px;
+
+        &:hover {
+          color: $main-red;
+        }
+      }
+    }
+
+    .nav-item:last-child {
+      border: 2px solid $main-red;
+      border-radius: 4px;
+    }
+  }
+}
+
+@media (max-width: 992px) {
+  .header {
+    .navbar-nav {
+      .nav-item {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        .nav-link {
+          margin-block: 10px;
+          border-bottom: 1px solid $white;
+        }
+      }
+
+      .nav-item:last-child {
+        border: none;
+
+        .nav-link {
+          border: 2px solid $main-red;
+          border-radius: 4px;
+          width: fit-content;
+          padding: 5px 10px;
+        }
+      }
     }
   }
 }

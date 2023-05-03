@@ -7,7 +7,9 @@
       <button class="hero-img__button">Book a table</button>
     </div>
     <div class="places">
-      <h1 class="places__title">- Find where we are!</h1>
+      <h1 class="places__title">
+        Do you want to visit us at others countries?
+      </h1>
       <div class="places__cards container-fluid row gx-0">
         <div class="mx-auto col-sm-8 col-lg-6 col-xxl-4 p-3">
           <div class="place-card madrid">
@@ -43,7 +45,7 @@
   .hero-img {
     background-size: cover;
     background-repeat: no-repeat;
-    background-image: url("../../public/heroimg.jpg");
+    background-image: url("../assets/imgs/hero-img.jpg");
     height: 700px;
 
     display: flex;
@@ -73,6 +75,7 @@
 
     &__title {
       padding: 20px;
+      color: #e8edeb;
     }
 
     &__cards {
@@ -106,10 +109,10 @@
 
           background-color: transparent;
           border: 2px solid red;
-          color: red;
+          color: #f8dee0;
 
           &:hover {
-            background-color: red;
+            background-color: #320b0e;
             color: white;
           }
         }
@@ -118,25 +121,21 @@
       .madrid {
         background-size: cover;
         background-repeat: no-repeat;
-        background-image: url("../../public/madrid.jpg");
+        background-image: url("../assets/imgs/madrid.jpg");
       }
 
       .paris {
         background-size: 100%;
         background-repeat: no-repeat;
-        background-image: url("../../public/paris.jpg");
+        background-image: url("../assets/imgs/paris.jpg");
       }
 
       .syndey {
         background-size: cover;
         background-repeat: no-repeat;
-        background-image: url("../../public/syndey.jpg");
+        background-image: url("../assets/imgs/syndey.jpg");
       }
     }
   }
 }
-
-/* .loco::-webkit-scrollbar {
-  display: none;
-} */
 </style>
