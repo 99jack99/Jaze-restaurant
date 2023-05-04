@@ -38,7 +38,7 @@
         ></iframe>
       </div>
     </div>
-    <div class="col-12 creator">Created by Jackson Almeida</div>
+    <div class="col-12 creator-ref">Created by Jackson Almeida</div>
   </div>
 </template>
 
@@ -64,19 +64,12 @@
       color: $white;
     }
   }
-
-  /* .map {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  } */
-
-  .creator {
+  .creator-ref {
     display: flex;
     align-items: center;
     justify-content: center;
     margin-block: 20px;
-    color: yellow;
+    color: $white;
   }
 }
 </style>

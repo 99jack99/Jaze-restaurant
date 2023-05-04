@@ -63,7 +63,7 @@
       .nav-link {
         font-size: 15px;
         font-weight: 500;
-        font-family: myFuente;
+        font-family: $normal-title;
         color: $white;
         padding: 5px 10px;
 

@@ -1,11 +1,11 @@
 <script setup></script>
 
 <template>
-  <div class="container-fluid loco">
+  <div class="container-fluid home-page">
     <div class="hero-img">
       <h1 class="hero-img__name">Jaze Restaurant</h1>
       <h1 class="hero-img__slogan">"A place, a culture"</h1>
-      <button class="hero-img__button">Reserve table</button>
+      <button class="hero-img__reserve-btn">Reserve table</button>
     </div>
     <div class="places">
       <h1 class="places__title">
@@ -38,22 +38,23 @@
 <style lang="scss" scoped>
 @import "../assets/styles/index.scss";
 
-.loco {
+.home-page {
   background-color: black;
   padding: 0;
+
   .hero-img {
     background-size: cover;
     background-repeat: no-repeat;
-    background-image: url("../assets/imgs/4.jpg");
+    background-image: url("../assets/imgs/hero-img.jpg");
+    background-position: center;
     height: 700px;
-
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 
     &__name {
-      font-family: myFuente;
+      font-family: $normal-title;
       color: $main-red;
       text-shadow: 2px 2px 2px $light-black;
     }
@@ -62,12 +63,12 @@
       color: $main-red;
       text-shadow: 2px 2px $light-black;
       margin-bottom: 50px;
-      font-family: test;
+      font-family: $big-title-font;
       font-size: 100px;
       margin: 20px;
     }
 
-    &__button {
+    &__reserve-btn {
       padding: 10px 20px;
       border-radius: 5px;
       border-style: none;
