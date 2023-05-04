@@ -3,8 +3,9 @@
 <template>
   <div class="container-fluid loco">
     <div class="hero-img">
+      <h1 class="hero-img__name">Jaze Restaurant</h1>
       <h1 class="hero-img__slogan">"A place, a culture"</h1>
-      <button class="hero-img__button">Book a table</button>
+      <button class="hero-img__button">Reserve table</button>
     </div>
     <div class="places">
       <h1 class="places__title">
@@ -14,21 +15,18 @@
         <div class="mx-auto col-sm-8 col-lg-6 col-xxl-4 p-3">
           <div class="place-card madrid">
             <h3 class="place-card__title">Madrid</h3>
-            <div class="place-card__description">hahahahah</div>
             <button class="place-card__more">READ MORE</button>
           </div>
         </div>
         <div class="mx-auto col-sm-8 col-lg-6 col-xxl-4 p-3">
           <div class="place-card paris">
             <h3 class="place-card__title">Paris</h3>
-            <div class="place-card__description">hahahahah</div>
             <button class="place-card__more">READ MORE</button>
           </div>
         </div>
         <div class="mx-auto col-sm-8 col-lg-6 col-xxl-4 p-3">
           <div class="place-card syndey">
             <h3 class="place-card__title">Syndey</h3>
-            <div class="place-card__description">hahahahah</div>
             <button class="place-card__more">READ MORE</button>
           </div>
         </div>
@@ -46,7 +44,7 @@
   .hero-img {
     background-size: cover;
     background-repeat: no-repeat;
-    background-image: url("../assets/imgs/hero-img.jpg");
+    background-image: url("../assets/imgs/4.jpg");
     height: 700px;
 
     display: flex;
@@ -54,44 +52,54 @@
     align-items: center;
     justify-content: center;
 
+    &__name {
+      font-family: myFuente;
+      color: $main-red;
+      text-shadow: 2px 2px 2px $light-black;
+    }
+
     &__slogan {
-      color: green;
-      text-shadow: 1px 1px red;
+      color: $main-red;
+      text-shadow: 2px 2px $light-black;
       margin-bottom: 50px;
       font-family: test;
       font-size: 100px;
+      margin: 20px;
     }
 
     &__button {
       padding: 10px 20px;
       border-radius: 5px;
       border-style: none;
+      background-color: $main-red;
+      color: $main-black;
 
       &:hover {
-        background-color: red;
+        background-color: $light-black;
+        color: $main-red;
       }
     }
   }
 
   .places {
     /* background-color: lightcoral; */
+    padding-bottom: 40px;
 
     &__title {
       padding: 20px;
       color: #e8edeb;
+      margin: 40px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
     }
 
     &__cards {
       margin: 0;
-
-      /* display: flex;
-      align-items: center;
-      justify-content: center; */
       .place-card {
-        border: 2px solid red;
+        /*  border: 3px solid $main-red; */
 
         background-color: transparent;
-        color: red;
 
         border-radius: 4px;
 
@@ -102,6 +110,8 @@
 
         &__title {
           margin-block: 20px;
+          color: $main-red;
+          text-shadow: 2px 2px 2px $light-black;
         }
 
         &__more {
@@ -110,13 +120,13 @@
           border-radius: 4px;
           margin-block: 20px;
 
-          background-color: transparent;
-          border: 2px solid red;
-          color: #f8dee0;
+          border: 2px solid $main-red;
+          color: $light-black;
+          background-color: rgba(255, 255, 255, 0.288);
 
           &:hover {
-            background-color: #320b0e;
             color: white;
+            background-color: $main-red;
           }
         }
       }
