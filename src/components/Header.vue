@@ -3,7 +3,12 @@
 <template>
   <nav class="navbar navbar-expand-lg header">
     <div class="container-fluid">
-      <img class="navbar-brand logo" src="../assets/imgs/icons/jaze-logo.png" />
+      <RouterLink to="/"
+        ><img
+          class="navbar-brand logo"
+          src="../assets/imgs/icons/jaze-logo.png"
+          to="/"
+      /></RouterLink>
       <button
         class="navbar-toggler header__collapse-button"
         type="button"
@@ -21,10 +26,10 @@
       >
         <ul class="navbar-nav">
           <li class="nav-item">
-            <a class="nav-link" href="#">Menu</a>
+            <RouterLink to="/menu" class="nav-link">Menu</RouterLink>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Contact</a>
+            <RouterLink to="/contact" class="nav-link">Contact</RouterLink>
           </li>
         </ul>
       </div>

@@ -5,7 +5,9 @@
     <div class="hero-img">
       <h1 class="hero-img__name">Jaze Restaurant</h1>
       <h1 class="hero-img__slogan">"A place, a culture"</h1>
-      <button class="hero-img__reserve-btn">Reserve table</button>
+      <button class="hero-img__reserve-btn" v-on:click="hola()">
+        Reserve table
+      </button>
     </div>
     <div class="places">
       <h1 class="places__title">
